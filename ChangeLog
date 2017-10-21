@@ -1,6 +1,7 @@
-XXXX-XX-XX:
+2017-10-12:
 	* Added compatibility with the "cleveref" package.
 	* Added a "chapterbold" option that bolds all the chapter headings.
+	* Fixed appendix behavior to match chapter behavior.
 	* Fixed a small miscalculation in the placement of the page number on landscape pages.
 	* Fixed a bug where sideways tables/figures in sequence could cause some pages to not be rotated.
 	* Fixed a bug where multiple "List of Symbols" categories placed all symbols in the last category.
