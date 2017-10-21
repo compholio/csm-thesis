@@ -1,0 +1,12 @@
+\#*\#
+/csm-thesis.pdf
+/csm-thesis.sty
+/*.aux
+/*.loabbrv
+/*.log
+/*.lof
+/*.los
+/*.lot
+/*.out
+/*.toc
+/*.pdf

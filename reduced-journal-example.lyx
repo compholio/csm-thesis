@@ -1,0 +1,967 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass csm-thesis
+\begin_preamble
+% Uncomment for automatic equation breaking:
+%\usepackage{breqn}
+\usepackage{morewrites}
+\end_preamble
+\options letterpaper
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_numerical
+\use_bibtopic true
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 4
+\tocdepth 4
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+% Parts of a Thesis
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+%% Parts of a Thesis - Front Matter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --FrontMatter--
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+%%% Parts of a Thesis - Front Matter - Title Page (required)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+% VERY IMPORTANT NOTE:
+\end_layout
+
+\begin_layout Plain Layout
+% In LyX you must use Ctrl+Enter (Apple+Enter on Mac) to make multi-line
+ titles!
+\end_layout
+
+\begin_layout Plain Layout
+% Note that if you make a multi-line title manually then the thesis style
+ will not attempt to make the title into an inverted pyramid.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Developing a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+atom{12}{6}{Th}{2+}{3}
+\end_layout
+
+\end_inset
+
+esis Template to Help Students Graduate in a Reasonable Time
+\end_layout
+
+\begin_layout Author
+Graduate A.
+ Student
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+%%% Parts of a Thesis - Front Matter - Copyright Page (optional)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+% If the copyright for your document spans multiple years, or does not match
+ the current year, then replace ''
+\backslash
+the
+\backslash
+year`` below with the appropriate text.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+makecopyright{
+\backslash
+the
+\backslash
+year}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+%%% Parts of a Thesis - Front Matter - Signature Page (required)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Degree
+Master of Science
+\end_layout
+
+\begin_layout Discipline
+Engineering Systems
+\end_layout
+
+\begin_layout Department
+Engineering
+\end_layout
+
+\begin_layout Advisor
+Dr.
+ Primary A.
+ Advisor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Remove the following line if you do not have a co-advisor:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Co-Advisor
+Dr.
+ Secondary B.
+ Advisor
+\end_layout
+
+\begin_layout DepartmentHeadName
+Dr.
+ Big Boss
+\end_layout
+
+\begin_layout DepartmentHeadTitle
+Professor and Head
+\end_layout
+
+\begin_layout -SubmittalPage-
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+%%% Parts of a Thesis - Front Matter - Abstract (required)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+Test
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+%%% Parts of a Thesis - Front Matter - Table of Contents (required)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout -ListOfFiguresAndTables-
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+%%% Parts of a Thesis - Front Matter - List of Symbols (if applicable)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+% Place this call (uncomment) before 
+\begin_inset Quotes eld
+\end_inset
+
+
+\backslash
+listofsymbols
+\begin_inset Quotes erd
+\end_inset
+
+ to make the symbols appear on the left instead of the right:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ShowSymbolFirst
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+% To call the 
+\begin_inset Quotes eld
+\end_inset
+
+List of Symbols
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Nomenclature
+\begin_inset Quotes erd
+\end_inset
+
+ instead add (uncomment):
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+listsymbolname}{Nomenclature}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout -ListOfSymbols-
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+% With very large symbol lists it is sometimes good to split the list into
+ multiple sub-lists.
+ To output the lists just use the extended 
+\backslash
+listofsymbols command (below) and to add an element to the list use the
+ optional parameter to ''
+\backslash
+addsymbol``.
+\end_layout
+
+\begin_layout -ListOfSymbols-
+General Nomenclature
+\end_layout
+
+\begin_layout -ListOfSymbols-
+Greek Letters
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+% Note that you may define symbols anywhere in the document, when you re-run
+ LaTeX they
+\end_layout
+
+\begin_layout Plain Layout
+% will be added to the list (just like all other lists)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+% Note for LyX users, there are two ways to define symbols:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+% (1) Built-in LyX nomenclature command:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\alpha_c$"
+description "absorption coefficient"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+% (2) Custom 
+\begin_inset Quotes eld
+\end_inset
+
+addsymbol
+\begin_inset Quotes erd
+\end_inset
+
+ command, the recommend method (allows simple copy-paste):
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addsymbol{
+\end_layout
+
+\end_inset
+
+absorption cross section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\alpha_{\sigma}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addsymbol{
+\end_layout
+
+\end_inset
+
+average radius of cylindrical shell
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $c$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addsymbol{
+\end_layout
+
+\end_inset
+
+activation energy of oxidation reaction of a-C in excited state
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $E_{act}^{\ast}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+% Example for sub-list symbols (optional parameter specifies which list
+ to use):
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addsymbol[General Nomenclature]{
+\end_layout
+
+\end_inset
+
+absorption coefficient
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\alpha_{c}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addsymbol[General Nomenclature]{
+\end_layout
+
+\end_inset
+
+absorption cross section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\alpha_{\sigma}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addsymbol[Greek Letters]{
+\end_layout
+
+\end_inset
+
+average radius of cylindrical shell
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $c$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addsymbol[Greek Letters]{
+\end_layout
+
+\end_inset
+
+activation energy of oxidation reaction of a-C in excited state
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $E_{act}^{\ast}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --BodyMatter--
+
+\end_layout
+
+\begin_layout Chapter
+General Introduction
+\end_layout
+
+\begin_layout Standard
+A general introduction to your articles goes here.
+\end_layout
+
+\begin_layout Chapter
+General Introduction
+\end_layout
+
+\begin_layout Standard
+A general introduction to your articles goes here.
+\end_layout
+
+\begin_layout Chapter
+General Introduction
+\end_layout
+
+\begin_layout Standard
+A general introduction to your articles goes here.
+\end_layout
+
+\begin_layout Chapter
+Your First Publication
+\end_layout
+
+\begin_layout Standard
+A chapter
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ref:A,ref:B,ref:C"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "thesis"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Subdocument Test
+\end_layout
+
+\begin_layout Standard
+test
+\end_layout
+
+\begin_layout Chapter
+Your Second Publication
+\end_layout
+
+\begin_layout Standard
+test
+\end_layout
+
+\begin_layout Chapter
+General Conclusions
+\end_layout
+
+\begin_layout Standard
+test
+\end_layout
+
+\begin_layout --BackMatter--
+
+\end_layout
+
+\end_body
+\end_document
