@@ -269,8 +269,8 @@
 	\newappendixnum%
 	\setcounter{section}{\value{appendix}}%
 	\csm@reset@counters%
-	% Measure the length of ``Appendix A -'' for the ToC
-	\setbox\csm@temp@box=\hbox{\MakeTextUppercase{{\csm@appendix@text}\space-\space}}%
+	% Measure the length of ``Appendix A'' for the ToC
+	\setbox\csm@temp@box=\hbox{\MakeTextUppercase{{\csm@appendix@text}\space}}%
 	\ifnum\wd\csm@temp@box > \l@appendix@indent\relax%
 		\setlength{\l@appendix@indent}{\wd\csm@temp@box}%
 	\fi%
@@ -280,13 +280,13 @@
 	% New code:
 	\let\@chapter@call\@true%
 	\if@csm@backmatter@%
-		\section{{\csm@appendix@text} - #1}%
+		\section{{\csm@appendix@text}\protect\\ #1}%
 	\else%
-		\subsection{{\csm@appendix@text} - #1}%
+		\subsection{{\csm@appendix@text} #1}%
 	\fi%
 	\let\@chapter@call\@empty%
 	\if@csm@backmatter@%
-		\expandafter\addcontentsline{toc}{appendix}{\protect\texorpdfupper{\protect\numberline{{\csm@appendix@text} -}#1}}%
+		\expandafter\addcontentsline{toc}{appendix}{\protect\texorpdfupper{\protect\numberline{\csm@appendix@text}#1}}%
 	\fi%
 }{}
 % The following redefinition allows ``\appendix'' to be used both with and without a parameter, when called without a parameter we're likely being called by LyX (nothing needs to be done).
