@@ -11,7 +11,6 @@ repair or correction.
 ## ChangeLog
 
 ### 2017-10-12
-
   * Added compatibility with the "cleveref" package.
   * Added a "chapterbold" option that bolds all the chapter headings.
   * Fixed appendix behavior to match chapter behavior.
