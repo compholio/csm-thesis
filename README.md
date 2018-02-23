@@ -10,6 +10,9 @@ repair or correction.
 
 ## ChangeLog
 
+### 2018-02-23
+  * Removed "empty section" requirement.
+
 ### 2017-10-12
   * Added compatibility with the "cleveref" package.
   * Added a "chapterbold" option that bolds all the chapter headings.

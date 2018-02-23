@@ -1050,18 +1050,14 @@
 \AtBeginDocument{
 	\newcommand\csm@header@spacing{\setstretch{1}}
 	\newcommand{\subsection@}[1]{
-		\csm@section@check %% Redefine section commands with section check
 		\global\let\@currentlabel\thesubsection
 		\@startsection{subsection}{-1}{\z@}{-3.25ex\@plus -1ex \@minus -.2ex}{1.5ex \@plus .2ex}
 		{\@subsection@style}{#1}%
-		\reset@csm@section@check%
 	}
 	\newcommand{\subsubsection@}[1]{
-		\csm@section@check %% Redefine section commands with section check
 		\global\let\@currentlabel\thesubsubsection
 		\@startsection{subsubsection}{-1}{\z@}{-3.25ex\@plus -1ex \@minus -.2ex}{1.5ex \@plus .2ex}
 		{\@subsubsection@style}{#1}%
-		\reset@csm@section@check%
 	}
 	\newcommand{\paragraph@}[1]{%
 		\global\let\@currentlabel\theparagraph

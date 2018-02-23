@@ -108,32 +108,6 @@
 		{\csm@sectionfontstyle}}
 }
 
-% At least one paragraph of text must follow each heading or subheading. Headings and subheadings may not follow each other without some text between, and may not stand alone at the bottom of a page.
-%% <<NOTE: Inspired by lineno.sty>>
-\newcounter{csmsectionline}
-\setcounter{csmsectionline}{0}
-\global\let\csm@ln@output\@@par
-\gdef\@@par{%
-	\ifvmode\else%
-		\ifinner\else%
-			\addtocounter{csmsectionline}{1}%
-		\fi%
-	\fi%
-	\csm@ln@output%
-}
-\gdef\reset@csm@section@check{\setcounter{csmsectionline}{0}}
-\gdef\csm@section@check{%
-	% Only perform the empty section check when the ``insane'' option is off
-	\ifx\csm@thesis@nochecks\@false%
-		% And when we're not in ``journal article mode''
-		\if@csm@within@article@\else%
-			\expandafter\ifnum\value{csmsectionline}=0%
-				\expandafter\csm@ogs@error{You have an empty section \on@line}%
-			\fi%
-		\fi%
-	\fi%
-}
-
 %% Convenience command for converting text to upper case in hyperref-sensitive areas
 \newcommand{\texorpdfupper}[1]{%
 	\ifx \csm@hyperref\@true%
@@ -178,7 +152,6 @@
 		\global\let\csm@firstchapter\@false%
 		\csm@reset@indents%
 	\fi%
-	\csm@section@check%
 	\cleardoublepage%
 	% Label the chapter properly for cross-referencing
 	\global\let\@currentlabel\thesection%
@@ -198,7 +171,6 @@
 	\section{Chapter \thesection\protect\\ #1}%
 	\let\@chapter@call\@empty%
 	\expandafter\addcontentsline{toc}{chapter}{\protect\texorpdfupper{\protect\numberline{Chapter \thesection}#1}}%
-	\reset@csm@section@check%
 	\csm@chapter@hook%
 }
 % Special command to mark internal \section calls
@@ -213,7 +185,6 @@
 
 % EXTRA: Treat ``\part'' just like a chapter wrt. the heading.
 \renewcommand{\part}[1]{
-	\csm@section@check
 	\cleardoublepage
 	\refstepcounter{part}%
 	% Label the chapter properly for cross-referencing
@@ -226,7 +197,6 @@
 	\section{Part \thepart\protect\\ #1}
 	\let\@chapter@call\@empty
 	\expandafter\addcontentsline{toc}{part}{\protect\texorpdfupper{\protect\numberline{Part \thepart}#1}}
-	\reset@csm@section@check
 }
 \AtBeginDocument{
 	\gdef\toclevel@part{0}
