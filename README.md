@@ -10,6 +10,9 @@ repair or correction.
 
 ## ChangeLog
 
+### 2019-07-23
+  * Fixed biblatex compatibility.
+
 ### 2018-02-23
   * Removed "empty section" requirement.
 

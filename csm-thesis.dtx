@@ -1618,7 +1618,11 @@
 \global\let\csm@disallow@bibtopic=\@false%
 \CSM@AtEndPreamble{
 	%% Create a special bibliography style so the last defined style is the one used
-	\global\let\csm@orig@bibliographystyle=\bibliographystyle
+	\@ifpackageloaded{biblatex}{
+		\gdef\csm@orig@bibliographystyle#1{}
+	}{
+		\global\let\csm@orig@bibliographystyle=\bibliographystyle
+	}
 	\gdef\csm@bibliographystyle@set#1{%
 		\gdef\csm@bibliographystyle{#1}%
 	}
