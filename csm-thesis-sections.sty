@@ -108,6 +108,19 @@
 		{\csm@sectionfontstyle}}
 }
 
+%% <<NOTE: Inspired by lineno.sty>>
+\newcounter{csmsectionline}
+\setcounter{csmsectionline}{0}
+\global\let\csm@ln@output\@@par
+\gdef\@@par{%
+	\ifvmode\else%
+		\ifinner\else%
+			\addtocounter{csmsectionline}{1}%
+		\fi%
+	\fi%
+	\csm@ln@output%
+}
+
 %% Convenience command for converting text to upper case in hyperref-sensitive areas
 \newcommand{\texorpdfupper}[1]{%
 	\ifx \csm@hyperref\@true%
