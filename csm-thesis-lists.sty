@@ -479,6 +479,7 @@
 }
 
 \gdef\csm@override@contentsline@swapon{%
+	\global\let\csm@save@contentsline@B=\contentsline%
 	\ifx\csm@hyperref\@true\relax%
 		\gdef\csm@contentsline##1##2##3##4{%
 			\contentsline{##1}{##3}{##2}{##4}%
@@ -489,10 +490,8 @@
 		}%
 	\fi%
 }
-\gdef\csm@override@contentsline@swapdone#1{%
-	\ifx\@false#1%
-		\global\let\contentsline=\csm@save@contentsline@B%
-	\fi%
+\gdef\csm@override@contentsline@swapdone{%
+	\global\let\contentsline=\csm@save@contentsline@B%
 }
 
 % Detect periods in citations in the list so that ``eaten'' citations can contain authors without double periods (e.g.: Author et al..)
