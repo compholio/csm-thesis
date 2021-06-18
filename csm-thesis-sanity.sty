@@ -67,14 +67,13 @@
 \@onlypreamble\CSM@AtBeginDocumentLast
 \gdef\CSM@AtBeginDocumentLast{\g@addto@macro\csm@begindocumenthook}
 % code for both:
-\global\let\orig@begin@document=\document
-\gdef\document{%
-	\endgroup
+\RequirePackage{etoolbox}
+\AtEndPreamble{%
 	\let\CSM@AtEndPreamble\@firstofone%
 	\csm@endpreamblehook%
 	\global\let\csm@endpreamblehook\@empty%
-	\begingroup
-	\orig@begin@document%
+}
+\AfterEndPreamble{%
 	\let\CSM@AtBeginDocumentLast\@firstofone%
 	\csm@begindocumenthook%
 	\global\let\csm@begindocumenthook\@empty%
